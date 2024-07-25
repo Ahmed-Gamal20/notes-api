@@ -3,7 +3,7 @@ import express from 'express';
 // import mongoose from 'mongoose';
 import { dbConnection } from './database/dbConnection.js';
 import userRoutes from './src/modules/users/user.routes.js';
-import noteRoutes from './src/modules/notes/note.routes.js';
+// import noteRoutes from './src/modules/notes/note.routes.js';
 import sendOurEmail from './src/utilties/sendEmail.js';
 // import userModel from './database/models/user.model.js';
 const app = express()
@@ -15,7 +15,7 @@ dbConnection
 
 
 app.use(userRoutes);
-app.use(noteRoutes);
+// app.use(noteRoutes);
 
 
 
